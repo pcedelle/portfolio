@@ -2,6 +2,9 @@
   "name": "pcdl-portfolio",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.3.1"
+    "bootstrap-sass-official": "~3.3.1",
+    "gsap": "~1.16.1",
+    "typedjs": "*",
+    "bourbon": "~4.2.3"
   }
 }

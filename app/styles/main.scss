@@ -2,6 +2,7 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 // endbower
 
 .browserupgrade {
@@ -15,6 +16,7 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -25,69 +27,45 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
+.container {
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+  width: 960px;
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
+  .intro {
+    @include transition(all 1.0s linear);
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    width: 100%;
+    height: 200px;
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
+    h1 {
+      @include transition(all 1.0s linear);
+      font-size: 4.5em;
+      font-weight: 800;
+      position: relative;
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
+      &.done {
+        width: 300px;
+        font-size: 2em;
+        padding-bottom: 5px;
+        border-bottom: 4px solid black;
+      }
+    }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
+    &.done {
+      height: 50px;
+      display: block;
+      text-align: left;
+
+    }
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
+
+  .content {
+    font-weight: 400;
+    display: none;
   }
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
 }

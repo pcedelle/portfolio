@@ -27,76 +27,31 @@ body {
   padding-right: 15px;
 }
 
-@include keyframes(loading) {
-  0% {
-    opacity: 1;
-    transform:  rotate(0deg);
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform:  rotate(1658deg);
-  }
-}
-
-@include keyframes(traceTop) {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 40px;
-  }
-}
-
-@include keyframes(traceY) {
-  0% {
-    height: 0px;
-  }
-  100% {
-    height: 40px;
-  }
-}
-
 .container {
 
   width: 960px;
 
   .intro {
     @include transition(all 1.0s linear);
-    @include display(flex);
-    @include align-items(center);
-    @include justify-content(center);
     width: 100%;
-    height: 200px;
 
     h1 {
       @include transition(all 1.0s linear);
-      font-size: 4.5em;
       font-weight: 800;
       position: relative;
-
-      &.done {
-        width: 300px;
-        font-size: 2em;
-        padding-bottom: 5px;
-        border-bottom: 4px solid black;
-      }
-    }
-
-    &.done {
+      width: 300px;
       height: 50px;
-      display: block;
       text-align: left;
-
+      font-size: 2em;
+      padding-bottom: 5px;
+      border-bottom: 4px solid black;
     }
   }
 
 
   .content {
     font-weight: 400;
-    display: none;
+    opacity: 0;
   }
 
 }

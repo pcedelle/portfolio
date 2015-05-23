@@ -13,7 +13,30 @@ body {
 
 
 section.intro {
+  @include outer-container(100%);
+  background-color: black;
+  padding-top: 10%;
 
+  .logo {
+    margin: 0 auto;
+    position: relative;
+    max-width: 75%;
+    mask: url('../images/PC-logo.svg') no-repeat;
+    height: 600px;
+    background-color: white;
+    overflow: hidden;
+
+    .slash {
+      @include transform(rotate(49deg));
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 150%;
+      width: 400%; 
+      height: 400%; 
+      background-color: #000;
+    }
+  }
 }
 
 
@@ -23,6 +46,7 @@ section.intro {
 }
 
 section.main {
+  display: none;
 
   @include outer-container(100%);
 
@@ -30,8 +54,12 @@ section.main {
     @include transition(all 1.0s linear);
     width: 100%;
     height: 80px;
-    padding-top: 10px;
+    padding-top: 14px;
     background-color: black;
+
+    .container {
+      opacity: 0;
+    }
 
     h1 {
       @include transition(all 1.0s linear);
@@ -42,15 +70,13 @@ section.main {
       background: url(../images/pc-logo-white@2x.png) no-repeat top left;
       background-size: 150px;
       text-indent: -9999px;
-      padding-bottom: 5px;
-      border-bottom: 4px solid #fff;
     }
 
     .social {
       position: absolute;
       right: 0;
       width: 100px;
-      top: 30%;
+      top: 24%;
 
       a {
         @include transition(all 0.3s linear);

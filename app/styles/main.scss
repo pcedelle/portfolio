@@ -1,53 +1,70 @@
-$icon-font-path: '../fonts/';
+$icon-font-path: '../font/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "bower_components/neat/app/assets/stylesheets/_neat.scss";
+@import "bower_components/socialicious/scss/socialicious.scss";
 // endbower
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-family: 'Raleway', sans-serif;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+
+section.intro {
+
 }
 
+
 .container {
+  @include outer-container(980px);
+  position: relative;
+}
 
-  width: 960px;
+section.main {
 
-  .intro {
+  @include outer-container(100%);
+
+  header {
     @include transition(all 1.0s linear);
     width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    background-color: black;
 
     h1 {
       @include transition(all 1.0s linear);
-      font-weight: 800;
+      margin: 0;
       position: relative;
-      width: 300px;
-      height: 50px;
-      text-align: left;
-      font-size: 2em;
+      width: 150px;
+      height: 60px;
+      background: url(../images/pc-logo-white@2x.png) no-repeat top left;
+      background-size: 150px;
+      text-indent: -9999px;
       padding-bottom: 5px;
-      border-bottom: 4px solid black;
+      border-bottom: 4px solid #fff;
+    }
+
+    .social {
+      position: absolute;
+      right: 0;
+      width: 100px;
+      top: 30%;
+
+      a {
+        @include transition(all 0.3s linear);
+        color: #fff;
+        margin-left: 10px;
+        cursor: pointer;
+
+        &:hover {
+          color: #B6B6B6;
+          text-decoration: none;
+        }
+      }
     }
   }
-
 
   .content {
     font-weight: 400;

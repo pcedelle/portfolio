@@ -7,6 +7,8 @@
     "typedjs": "*",
     "bourbon": "~4.2.3",
     "raphael": "~2.1.4",
-    "lazy-line-painter": "~1.5.1"
+    "lazy-line-painter": "~1.5.1",
+    "neat": "~1.7.2",
+    "socialicious": "*"
   }
 }

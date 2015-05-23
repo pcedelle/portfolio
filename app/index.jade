@@ -2,7 +2,7 @@ doctype html
 html(lang='')
   head
     meta(charset='utf-8')
-    meta(name='description', content='')
+    meta(name='description', content='Full-stack web engineer with leadership skills & 5+ years experience.')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Philippe Cedelle - Web engineer
     // Place favicon.ico and apple-touch-icon.png in the root directory
@@ -16,13 +16,10 @@ html(lang='')
     link(href='http://fonts.googleapis.com/css?family=Raleway:400,700,800,300', rel='stylesheet', type='text/css')
 
   body
-    //if lt IE 10
-      p.browserupgrade
-        | You are using an 
-        strong outdated
-        |  browser. Please 
-        a(href='http://browsehappy.com/') upgrade your browser
-        |  to improve your experience.
+    <!--[if lt IE 10]>
+    .overlay-ltie10
+      h2 You have a very old browser. Please come back when you have updated it.
+    <![endif]-->
 
 
     section.intro
@@ -33,36 +30,38 @@ html(lang='')
         .container
           h1 Philippe Cedelle
           .social
-            a(href='https://github.com/pcedelle' title="GitHub").icon-2x.icon-github-sign
-            a(href="https://www.linkedin.com/in/pcedelle/en" title="LinkedIn").icon-2x.icon-linkedin-sign
+            a(href='https://github.com/pcedelle' title="GitHub" target="_blank").icon-2x.icon-github-sign
+            a(href="https://www.linkedin.com/in/pcedelle/en" target="_blank" title="LinkedIn").icon-2x.icon-linkedin-sign
       .content
         .container
           h2 
-            | Full stack web engineer with leadership skills and 
+            | Full-stack web engineer with leadership skills and 
             br
             | 5+ years of experience.
-          p 
+          p.manifesto 
             | With a broad awareness of web technologies, their pros, cons &amp; caveats, 
             br
             | I help creative teams achieve viable designs &amp; I lay out the ground work for technical teams to go from design to production.      
-          p Specific skills include :         
-          ul
-            li 2+ years experience managing small technical teams.             
-            li Ability to breakdown projects into tasks with realistic timeframes for completion.            
-            li Well-trained to communicate technical subjects to non-technical audiences.            
-            li Expert knowledge of LAMP/LEMP/LEPP stacks.
-            li Expertise in javacript &amp; front-end development
-            li Full proficiency in Debian sys. admin.
-            li
-              | Assessing a project to know what is feasible, in how much time and within a specific budget.
-            li
-              | Additional knowledge includes : Backbone.js, Express, Angular, Laravel, Wordpress, Drupal, Vagrant, MongoDB, scripting (bash/ruby/node), git workflows...          
-          p More about me:
-          ul
-            li
-              a(href='https://www.linkedin.com/in/pcedelle/en' title="LinkedIn") LinkedIn           
-            li
-              a(href='https://github.com/pcedelle' title="GitHub") GitHub
+          .skills
+            p Specific skills include :         
+            ul
+              li 2+ years experience managing small technical teams.             
+              li Ability to breakdown projects into tasks with realistic timeframes for completion.            
+              li Well-trained to communicate technical subjects to non-technical audiences.            
+              li Expert knowledge of LAMP/LEMP/LEPP stacks.
+              li Expertise in javacript &amp; front-end development
+              li Full proficiency in Debian sys. admin.
+              li
+                | Assessing a project to know what is feasible, in how much time and within a specific budget.
+              li
+                | Additional knowledge includes : Backbone.js, Express, Angular, Laravel, Wordpress, Drupal, Vagrant, MongoDB, scripting (bash/ruby/node), advanced git workflows...          
+          .more
+            p More about me:
+            ul
+              li
+                a(href='https://www.linkedin.com/in/pcedelle/en' title="LinkedIn") LinkedIn           
+              li
+                a(href='https://github.com/pcedelle' title="GitHub") GitHub
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.

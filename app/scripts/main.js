@@ -9,7 +9,6 @@ $(function() {
       $slash = $('.intro .slash'),
       $main = $('.main'),
       $header = $('.main header .container'),
-      $content = $('.main .content'),
       $subtitle = $('.main h2'),
       $manifesto = $('.main .manifesto'),
       $skills = $('.main .skills');

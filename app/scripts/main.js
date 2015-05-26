@@ -27,7 +27,7 @@ $(function() {
 
     var height = $window.height();
     
-    TweenMax.to($slash, 1.5, {delay: 1.5, left: '-70%', top: '-' + height + 'px', onComplete: function () {
+    TweenMax.to($slash, 1.5, {delay: 1.5, left: '-70%', top: '-' + height / 2 + 'px', onComplete: function () {
       $logo.hide();
     } }, '<>');
     TweenMax.to($intro, 0.7, {delay: 3, height: '80px', padding: '0', onComplete: this.stageTwo, onCompleteScope: this }, '<>');

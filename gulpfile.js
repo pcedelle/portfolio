@@ -75,7 +75,7 @@ gulp.task('extras', function () {
     'app/*.*',
     '!app/*.html',
     '!app/*.jade',
-    'pdf/*.pdf'
+    'app/**/*.pdf'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));

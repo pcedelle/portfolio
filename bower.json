@@ -4,11 +4,7 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
     "gsap": "~1.16.1",
-    "typedjs": "*",
     "bourbon": "~4.2.3",
-    "raphael": "~2.1.4",
-    "lazy-line-painter": "~1.5.1",
-    "neat": "~1.7.2",
-    "socialicious": "*"
+    "neat": "~1.7.2"
   }
 }

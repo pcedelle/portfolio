@@ -30,9 +30,9 @@ section.intro {
     margin: 0 auto;
     position: relative;
     max-width: 75%;
-    mask: url('../images/PC-logo.svg') no-repeat;
+    background: url('../images/PC-logo-white.svg') no-repeat;
     height: 600px;
-    background-color: white;
+    background-color: black;
     overflow: hidden;
 
     .slash {
@@ -41,8 +41,8 @@ section.intro {
       position: absolute;
       top: 0;
       left: 150%;
-      width: 400%; 
-      height: 400%; 
+      width: 500%; 
+      height: 500%; 
       background-color: #000;
     }
   }
